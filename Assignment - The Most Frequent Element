@@ -18,6 +18,6 @@ a = max(seq, key= seq.count)  # elemanlarını tek tek say, her bir elemanına b
                           # özetle max fonksiyonunun çalışma şeklini değiştirdik.
 # çıktı olarak 1 verecek çünkü en çok tekrar eden 1.
 
-b = seq.count(max(seq, key= seq.count) # bu şekilde de kaç kere tekrar ettiğini görürüz.
+b = seq.count(max(seq, key= seq.count)) # bu şekilde de kaç kere tekrar ettiğini görürüz.
           
 print("En çok tekrar eden {} sayısıdır ve {} kere tekrar etmiştir.".format(a,b))
