@@ -1,0 +1,23 @@
+max(1,2,3)
+# max içerisindeki en büyüğü verir. eğer boş bir iterable yollar isek
+# default olarak ne atadıysak onu verir
+empty = []
+max(empty, default=True)
+
+seq = [1,1,1,1,2,2,2,3,3,4]
+
+max(seq)      # sonuç olarak 4 verir.
+seq.count(4)  # kaç kere tekrar ettiriyor?
+
+seq.count(max(seq))  # en fazla kullanılanı tekrar ettir.
+
+# max içerisine key= metodu kullanarak en çok tekrar edeni kullanacağız.
+
+a = max(seq, key= seq.count)  # elemanlarını tek tek say, her bir elemanına bunu uygula.
+                          # ve ona göre max'ı seç.
+                          # özetle max fonksiyonunun çalışma şeklini değiştirdik.
+# çıktı olarak 1 verecek çünkü en çok tekrar eden 1.
+
+b = seq.count(max(seq, key= seq.count) # bu şekilde de kaç kere tekrar ettiğini görürüz.
+          
+print("En çok tekrar eden {} sayısıdır ve {} kere tekrar etmiştir.".format(a,b))
