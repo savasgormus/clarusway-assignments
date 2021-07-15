@@ -1,1 +1,8 @@
-
+left_hand = set("qwertasdfgzxcvb")
+right_hand = set("yuıopğühjklşinmöç")
+word = input("please one word writing :")
+word2 = set(word)
+if  word2 in (word2&left_hand, word2&right_hand):
+    print("this word noncomfortable")
+else:
+    print("this word comfortable")
