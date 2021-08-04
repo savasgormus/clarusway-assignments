@@ -1,0 +1,13 @@
+fibonacci = []
+x = 0
+a = 1
+y = 0
+b = 1
+while not y == 55:
+  x = a + b
+  y = b + x 
+  a = x
+  b = y
+  fibonacci.append(x)
+  fibonacci.append(y)
+print("fibonacci : ", fibonacci)
